@@ -1,0 +1,54 @@
+body {
+    background-color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+/*like last session, we start the reference to the classe with a dot followed by the name of the class*/
+.header {
+    padding: 25px;
+    padding-bottom: 1px;
+    background-color: rgb(255, 187, 0);
+    text-align: center;
+    color: rgb(236, 25, 24);
+    
+}
+
+.slogan {
+    color:rgb(61,176,49);
+}
+
+.topnav {
+    overflow: hidden;
+    /*the bg color of this section will take on the height of the links defined in the html body (so its children). so to change the height of the grey strip, dont hard code and instead change the font size of the children (links)*/
+    background-color: rgb(61,176,49);
+}
+/*the "a" below refers to only the a tags that fall under the class "topnav". its a powerful way to target very specific elements. can be used in an exclusionary way too*/
+.topnav a {
+    float: left;
+    display: block;
+    color:rgb(255, 208, 80);
+    text-align: center;
+    /* the first number is x(horizontal) and second is y(vertical). each a-tag/link gets the padding*/
+    padding: 14px 16px;
+    /*gets rid of default decorative elements like underline or can add on decorative elements*/
+    text-decoration: none;
+}
+/*the ":hover" is a feature added to the a-tags/links in the .topnav div which will make them change in the below ways when the user's mouse is hovered over them*/
+.topnav a:hover {
+    background-color: rgb(255, 187, 0);
+    color: rgb(236, 25, 24);
+}
+
+.footer {
+    /*absolute positioning instead of the default relative positioning*/
+    /* position: absolute; */
+    /*were always gonna be a certain number of pxs away from the bottom and right*/
+    padding: 25px;
+    background-color: rgb(255, 187, 0);
+    text-align: center;
+    color: rgb(236, 25, 24);
+}
+
+.footer .copyright {
+    float: right;
+}
