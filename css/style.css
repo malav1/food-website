@@ -4,12 +4,16 @@ body {
     color: black;
 }
 /*like last session, we start the reference to the classe with a dot followed by the name of the class*/
+
 .header {
-    padding: 25px;
+    height: 28vw;
+    padding: 1px;
     padding-bottom: 1px;
+    padding-right: 10px;
     background-color: rgb(255, 187, 0);
     text-align: center;
     color: rgb(236, 25, 24);
+    font-size: 3vw;
     
 }
 
@@ -21,6 +25,7 @@ body {
     overflow: hidden;
     /*the bg color of this section will take on the height of the links defined in the html body (so its children). so to change the height of the grey strip, dont hard code and instead change the font size of the children (links)*/
     background-color: rgb(61,176,49);
+    font-size: 3vw;
 }
 /*the "a" below refers to only the a tags that fall under the class "topnav". its a powerful way to target very specific elements. can be used in an exclusionary way too*/
 .topnav a {
@@ -44,11 +49,15 @@ body {
     /* position: absolute; */
     /*were always gonna be a certain number of pxs away from the bottom and right*/
     padding: 25px;
+    position: relative;
+    height: 130px;
     background-color: rgb(255, 187, 0);
     text-align: center;
     color: rgb(236, 25, 24);
 }
 
 .footer .copyright {
-    float: right;
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
 }
