@@ -2,19 +2,19 @@ body {
     background-color:rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    max-width: 900px;
 }
 /*like last session, we start the reference to the classe with a dot followed by the name of the class*/
 
 .header {
-    height: 28vw;
+    height: 150px;
     padding: 1px;
     padding-bottom: 1px;
     padding-right: 10px;
     background-color: rgb(255, 187, 0);
-    text-align: center;
+    text-align:center;
     color: rgb(236, 25, 24);
-    font-size: 3vw;
-    
+    font-size:100%;
 }
 
 .slogan {
@@ -25,7 +25,7 @@ body {
     overflow: hidden;
     /*the bg color of this section will take on the height of the links defined in the html body (so its children). so to change the height of the grey strip, dont hard code and instead change the font size of the children (links)*/
     background-color: rgb(61,176,49);
-    font-size: 3vw;
+    font-size: 100%;
 }
 /*the "a" below refers to only the a tags that fall under the class "topnav". its a powerful way to target very specific elements. can be used in an exclusionary way too*/
 .topnav a {
@@ -50,7 +50,7 @@ body {
     /*were always gonna be a certain number of pxs away from the bottom and right*/
     padding: 25px;
     position: relative;
-    height: 130px;
+    height: 110px;
     background-color: rgb(255, 187, 0);
     text-align: center;
     color: rgb(236, 25, 24);
@@ -62,6 +62,17 @@ body {
     bottom: 0px;
 }
 
+.header .basket_pic {
+    width:1%;
+    float:right;
+    padding:1px;
+}
+
+
+
+
+
+/* CONTACT PAGE */
 input[type=text], select, textarea {
     width: 65%;
     padding: 12px;
